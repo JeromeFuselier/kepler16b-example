@@ -22,6 +22,8 @@ jobs:
         distribution: 'temurin'
     - name: Setup Gradle
       uses: gradle/actions/setup-gradle@v3
+    - name: Fuseki
+      run: ./gradlew startfuseki
     - name: Build
       run: ./gradlew build
     - name: Query
